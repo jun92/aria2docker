@@ -1,8 +1,8 @@
 #!/bin/sh
 aria2c --enable-rpc \
     --rpc-listen-all=false \
-    --rpc-listen-port $RPC_LISTEN_PORT \
-    --max-concurrent-downloads=2 \
+    --rpc-listen-port 8127 \
+    --max-concurrent-downloads=$CONCURRENT_COUNT \
     --max-connection-per-server=10 \
     --rpc-max-request-size=1024M \
     --seed-time=0.01 \
